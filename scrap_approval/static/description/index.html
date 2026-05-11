@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 { color: #2c6e9e; }
+        h2 { color: #2c6e9e; border-bottom: 2px solid #2c6e9e; padding-bottom: 6px; margin-top: 36px; }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .feature-icon {
+            font-size: 22px;
+            margin-right: 12px;
+            min-width: 32px;
+        }
+        .feature-text h3 { margin: 0 0 4px; color: #333; }
+        .feature-text p  { margin: 0; color: #666; }
+        .workflow {
+            background: #f4f8fb;
+            border-left: 4px solid #2c6e9e;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        th {
+            background: #2c6e9e;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .screenshot-caption {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+        .screenshot {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 28px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="banner.png" alt="Scrap Approval Workflow" style="width:100%; border-radius:8px; margin-bottom:24px;"/>
+
+    <h1>Scrap Approval Workflow</h1>
+    <p style="font-size:16px; color:#555;">
+        Take full control of your scrap transactions. Eliminate human errors,
+        enforce manager approval, and maintain complete traceability on every scrap order.
+    </p>
+
+    <h2>Key Features</h2>
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Dedicated Security Group</h3>
+            <p>A dedicated <strong>Scrap Operations Manager</strong> group is included in the module. Only assigned managers can approve or cancel scrap orders.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Record-Level Access Control</h3>
+            <p>Each employee sees only their own scrap orders. The Operations Manager has full visibility across all records.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Automatic Manager Notifications</h3>
+        </div>
+    </div>When a scrap order is submitted, all assigned managers receive an instant internal notification with full order details including product name and quantity
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Approval Tracking</h3>
+            <p>Every decision is recorded automatically — who approved or cancelled the order and the exact date and time.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Validation Protection</h3>
+             <p>The system validates the requested quantity against available stock both at submission and approval time. Orders exceeding available stock are blocked with a clear error message.</p>
+            <p>The standard Validate button is removed. Orders can only be processed after passing through the full approval workflow.</p>
+        </div>
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Manager Notes</h3>
+            <p>The Operations Manager can add notes or remarks directly on the scrap order before making a decision.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-text">
+            <h3>Reset to Draft</h3>
+            <p>Cancelled orders can be reset to Draft for correction and resubmission without losing any history.</p>
+        </div>
+    </div>
+
+    <h2> ⚡ Screenshots</h2>
+    <p class="screenshot-caption">
+        Draft state — employee creates the scrap order and submits it for approval with one click.
+    </p>
+    <img src="screenshot_form_draft.png" alt="Scrap Order Draft" class="screenshot"/>
+    <p class="screenshot-caption">
+        .
+    </p>
+     <p class="screenshot-caption">
+        The system validates the requested quantity against available stock both at submission and approval time. Orders exceeding available stock are blocked with a clear error message.
+    </p>
+    <img src="val.png" alt="Scrap Order Waiting Approval" class="screenshot"/>
+    <p class="screenshot-caption">
+        .
+    </p>
+    <p class="screenshot-caption">
+        The Operations Manager can now reject scrap orders with a mandatory reason. A popup appears to capture the rejection reason before changing the status to <strong>Rejected</strong>.
+        Users can cancel scrap orders directly from <strong>Draft</strong> or <strong>Waiting Approval</strong> status without going through the approval process.
+        Every submitted scrap order automatically gets a 48-hour approval deadline. A scheduled job notifies the Operations Manager when orders are overdue.
+    <img src="reg1.png" alt="Scrap Order Draft" class="screenshot"/>
+    <img src="reason.png" alt="Scrap Order Draft" class="screenshot"/>
+    <p class="screenshot-caption">
+        .
+    </p>
+
+     
+    <p class="screenshot-caption">
+        Scrap orders list showing approval status (Waiting Approval state - Canceled - Rejected - Done) for each order with instant manager 
+    </p>
+        <img src="screenshot_list1.png" alt="Scrap Orders List" class="screenshot"/>
+    <p class="screenshot-caption">
+        .
+    </p>
+
+    <p class="screenshot-caption">
+        When a scrap order is submitted, all assigned managers receive an instant internal notification with full order details including product name and quantity
+    </p>
+    <img src="screenshot_list3.png" alt="Scrap Orders List" class="screenshot"/>
+    <p class="screenshot-caption">
+        .
+    </p>
+    <p class="screenshot-caption">
+        Every action (submit, approve, reject, cancel, reset) is automatically logged in the chatter with the user name and timestamp for full traceability.
+    </p>
+    <img src="log.png" alt="Scrap Orders List" class="screenshot"/>
+    <p class="screenshot-caption">
+        .
+    </p>
+
+    
+    <h2>🔄 Approval Workflow</h2>
+    <div class="workflow">
+    Draft<br/>
+        &nbsp;&nbsp;↓ [Submit for Approval]<br/>
+        Waiting Approval<br/>
+        &nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
+        [Approve]&nbsp;&nbsp;&nbsp;[Reject]&nbsp;&nbsp;&nbsp;[Cancel]<br/>
+        &nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
+        Done ✅&nbsp;&nbsp;Rejected ❌&nbsp;&nbsp;Cancelled ❌<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Reset to Draft]
+    </div>
+
+    <h2>Information</h2>
+    <table>
+        <tr><td>Odoo Version</td><td>18.0</td></tr>
+        <tr><td>Category</td><td>Inventory</td></tr>
+        <tr><td>Author</td><td>Nooh Suliman</td></tr>
+        <tr><td>Dependencies</td><td>Stock</td></tr>
+        <tr><td>Email</td><td>nooh8586@gmail.com</td></tr>
+    </table>
+
+</body>
+</html>

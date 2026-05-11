@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_scrap_user,stock.scrap.user,stock.model_stock_scrap,base.group_user,1,1,1,0
+access_stock_scrap_manager,stock.scrap.manager,stock.model_stock_scrap,scrap_approval.group_scrap_operations_manager,1,1,1,1
+access_scrap_cancel_wizard,scrap.cancel.wizard,scrap_approval.model_scrap_cancel_wizard,scrap_approval.group_scrap_operations_manager,1,1,1,1

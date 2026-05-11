@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="mail_template_scrap_approval" model="mail.template">
+        <field name="name">Scrap Order: Approval Request</field>
+        <field name="model_id" ref="stock.model_stock_scrap"/>
+        <field name="subject">⚠️ Scrap Approval Required: {{ object.name }}</field>
+        <field name="body_html"><![CDATA[
+<div style="font-family: Arial, sans-serif; max-width: 600px;">
+    <h2 style="color: #e74c3c;">Scrap Order Approval Required</h2>
+    <p>Dear Operations Manager,</p>
+    <p>A new scrap order has been submitted and requires your approval:</p>
+    <table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+        <tr style="background:#f5f5f5;">
+            <td style="padding:8px; border:1px solid #ddd;"><strong>Reference</strong></td>
+            <td style="padding:8px; border:1px solid #ddd;">{{ object.name }}</td>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;"><strong>Product</strong></td>
+            <td style="padding:8px; border:1px solid #ddd;">{{ object.product_id.display_name }}</td>
+        </tr>
+        <tr style="background:#f5f5f5;">
+            <td style="padding:8px; border:1px solid #ddd;"><strong>Scrap Type</strong></td>
+            <td style="padding:8px; border:1px solid #ddd;">{{ object.scrap_type }}</td>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;"><strong>Quantity</strong></td>
+            <td style="padding:8px; border:1px solid #ddd;">{{ object.scrap_qty }} {{ object.product_uom_id.name }}</td>
+        </tr>
+        <tr style="background:#f5f5f5;">
+            <td style="padding:8px; border:1px solid #ddd;"><strong>Submitted By</strong></td>
+            <td style="padding:8px; border:1px solid #ddd;">{{ object.create_uid.name }}</td>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;"><strong>Date</strong></td>
+            <td style="padding:8px; border:1px solid #ddd;">{{ object.write_date }}</td>
+        </tr>
+    </table>
+    <p>Please review and approve or reject this scrap order in Odoo.</p>
+    <a href="/web#id={{ object.id }}&amp;model=stock.scrap&amp;view_type=form"
+       style="background:#2ecc71; color:white; padding:10px 20px; text-decoration:none; border-radius:4px;">
+        Review Scrap Order
+    </a>
+</div>
+        ]]></field>
+        <field name="auto_delete" eval="True"/>
+    </record>
+
+</odoo>
