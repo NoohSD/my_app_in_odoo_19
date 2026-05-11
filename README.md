@@ -1,0 +1,1 @@
+# -my_app_in_odoo_19
