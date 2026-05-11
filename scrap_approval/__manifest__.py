@@ -4,6 +4,7 @@
     'version': '19.0.1.0.0',
     'author': 'Nooh Suliman',
     'website': 'https://www.linkedin.com/in/nooh-suliman/',
+    'category': 'Inventory/Inventory',
     'summary': 'Add approval workflow to scrap orders with manager control and access restrictions',
     'description': """
 Scrap Approval Workflow
